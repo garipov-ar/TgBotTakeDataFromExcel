@@ -24,13 +24,13 @@ public class CommandsBot extends TelegramLongPollingBot {
 
     @Override
     public String getBotUsername() {
-        return "NAME";
+        return "korpk_bot";
     }
 
     @Override
 
     public String getBotToken() {
-        return "TOKEN";
+        return "5737882509:AAFawDR9V37rnVocTgVsoHAFEa3WI7mTz4U";
 
     }
 
