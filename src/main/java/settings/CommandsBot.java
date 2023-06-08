@@ -15,23 +15,19 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class CommandsBot extends TelegramLongPollingBot {
-
     private final Settings settings = new Settings();
-
     @Override
     public String getBotUsername() {
         return settings.getBotUsername();
-    }
-
+    } //тащим имя
     @Override
     public String getBotToken() {
         return settings.getBotToken();
-    }
-
+    } //тащим токен
     private static ReplyKeyboard replyKeyboard;
 
-    //public static File file = new File("/root/bot/data.xlsx");
-    public static File file = new File("data.xlsx");
+    public static File file = new File("/root/bot/data.xlsx");
+    //public static File file = new File("data.xlsx");
 
     long timestamp = file.lastModified();
     SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
@@ -273,27 +269,27 @@ public class CommandsBot extends TelegramLongPollingBot {
                             new String[]{ "Повторы", "SLA 3ЛТП платина", "SLA 3ЛТП прочие", "SLA сквозные прочие",
                                     "SLA сквозные платина", "Инсталляции с первого дня назначения"});
                 }
-                case "СЦ г.Тобольск" -> {
+                case "СЦ г. Тобольск" -> {
                     sendSCServiceKPI(chatId, "СЦ г. Тобольск", 22,
                             new String[]{ "Повторы", "SLA 3ЛТП платина", "SLA 3ЛТП прочие", "SLA сквозные прочие",
                                     "SLA сквозные платина", "Инсталляции с первого дня назначения"});
                 }
-                case "СЦ г.Тюмень" -> {
+                case "СЦ г. Тюмень" -> {
                     sendSCServiceKPI(chatId, "СЦ г. Тюмень", 23,
                             new String[]{ "Повторы", "SLA 3ЛТП платина", "SLA 3ЛТП прочие", "SLA сквозные прочие",
                                     "SLA сквозные платина", "Инсталляции с первого дня назначения"});
                 }
-                case "СЦ г.Шадринск" -> {
+                case "СЦ г. Шадринск" -> {
                     sendSCServiceKPI(chatId, "СЦ г. Шадринск", 24,
                             new String[]{ "Повторы", "SLA 3ЛТП платина", "SLA 3ЛТП прочие", "SLA сквозные прочие",
                                     "SLA сквозные платина", "Инсталляции с первого дня назначения"});
                 }
-                case "СЦ г.Шумиха" -> {
+                case "СЦ г. Шумиха" -> {
                     sendSCServiceKPI(chatId, "СЦ г. Шумиха", 25,
                             new String[]{ "Повторы", "SLA 3ЛТП платина", "SLA 3ЛТП прочие", "SLA сквозные прочие",
                                     "SLA сквозные платина", "Инсталляции с первого дня назначения"});
                 }
-                case "СЦ с.Кетово" -> {
+                case "СЦ с. Кетово" -> {
                     sendSCServiceKPI(chatId, "СЦ с. Кетово", 26,
                             new String[]{ "Повторы", "SLA 3ЛТП платина", "SLA 3ЛТП прочие", "SLA сквозные прочие",
                                     "SLA сквозные платина", "Инсталляции с первого дня назначения"});
